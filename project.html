@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project.css">
+    <title>Minor I</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Tiger Prediction</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="project.html" class="active">Project</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="project-content">
+            <h4 class="head-text">Prediction Analysis</h4>
+            <p>Please enter the following values:</p>
+            
+            <!-- Form for input values -->
+            <form id="wildlifeForm">
+                <div class="form-row">
+                    <label for="ndvi">NDVI:</label>
+                    <input type="number" id="ndvi" name="ndvi" step="1" required>
+
+                    <label for="nightlight">Nightlight:</label>
+                    <input type="number" id="nightlight" name="nightlight" step="0.01" required>
+
+                    <label for="area">Area (sq km):</label>
+                    <input type="number" id="area" name="area" required>
+                </div>
+
+                <h3>Prey Density (individuals per sq km)</h3>
+                <div class="prey-grid">
+                    <div class="prey-item">
+                        <label for="chital">Chital:</label>
+                        <input type="number" id="chital" name="chital" step="0.01" required>
+                    </div>
+                    <div class="prey-item">
+                        <label for="sambar">Sambar:</label>
+                        <input type="number" id="sambar" name="sambar" step="0.01" required>
+                    </div>
+                    <div class="prey-item">
+                        <label for="barkingDeer">Barking Deer:</label>
+                        <input type="number" id="barkingDeer" name="barkingDeer" step="0.01" required>
+                    </div>
+                    <div class="prey-item">
+                        <label for="wildPig">Wild Pig:</label>
+                        <input type="number" id="wildPig" name="wildPig" step="0.01" required>
+                    </div>
+                    <div class="prey-item">
+                        <label for="elephant">Elephant:</label>
+                        <input type="number" id="elephant" name="elephant" step="0.01" required>
+                    </div>
+                    <div class="prey-item">
+                        <label for="nilgai">Nilgai:</label>
+                        <input type="number" id="nilgai" name="nilgai" step="0.01" required>
+                    </div>
+                    <div class="prey-item">
+                        <label for="langur">Langur:</label>
+                        <input type="number" id="langur" name="langur" step="0.01" required>
+                    </div>
+                    <div class="prey-item">
+                        <label for="hogDeer">Hog Deer:</label>
+                        <input type="number" id="hogDeer" name="hogDeer" step="0.01" required>
+                    </div>
+                    <div class="prey-item">
+                        <label for="chinkara">Chinkara:</label>
+                        <input type="number" id="chinkara" name="chinkara" step="0.01" required>
+                    </div>
+                    <div class="prey-item">
+                        <label for="boar">Boar:</label>
+                        <input type="number" id="boar" name="boar" step="0.01" required>
+                    </div>
+                </div>
+
+                
+            </form>
+            <button type="button" id="submitForm" class="btn">ANANLYSIS</button>
+        </div>
+    </section>
+
+    <dialog id="output-dialog">
+        <h3>Analysis Result</h3>
+        <div id="output-content"></div>
+        <button id="close-dialog" class="btn">Close</button>
+    </dialog>
+    
+    <script src="script.js"></script>
+
+    <footer style="background-color: #013a02; color: white; padding: 20px; text-align: center; font-size: 0.9rem; margin-top: 20px;">
+        <p>&copy; 2024 Tiger Prediction. Developed by Aarushi & Akshit Bhutani.</p>
+        <p>Disclaimer: The predictions provided are based on ecological data and mathematical models. While efforts are made to ensure accuracy, results may vary due to data limitations and model assumptions. Use this tool as a supplementary resource, not a definitive guide.</p>
+    </footer>
+    
+
+</body>
+</html>
